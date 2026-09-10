@@ -61,3 +61,24 @@ body.light-theme{--ink:#f3f5f2;--panel:#ffffff;--panel2:#f8faf7;--text:#111512;-
   .light-theme .mobile-date{background:#edf2e9}
   .light-theme .mobile-course-card,.light-theme .mobile-event-card{background:#fff}.light-theme .course-week{background:#edf2e9}.light-theme .course-progress{background:#e4e9e3}.contact-groups{grid-template-columns:1fr}
 }
+
+@media(max-width:760px){
+  .mobile-book-now{min-height:82px;margin-top:10px;border:1px solid var(--line);background:linear-gradient(135deg,rgba(200,255,54,.1),var(--panel));color:inherit;padding:17px 18px;box-shadow:none}
+  .mobile-book-now:hover{border-color:rgba(200,255,54,.35)}
+  .mobile-book-now small{color:var(--lime);opacity:1}
+  .mobile-book-now strong{font-size:1rem}
+  .mobile-book-now>svg{width:38px;height:38px;padding:10px;border-radius:50%;background:var(--lime);color:#111}
+  .mobile-course-card,.mobile-event-card{min-height:118px;border:1px solid var(--line);background:var(--panel);box-shadow:none;overflow:hidden;position:relative}
+  .mobile-course-card:before,.mobile-event-card:before{content:'';position:absolute;inset:0 auto 0 0;width:3px;background:var(--lime)}
+  .mobile-course-card{grid-template-columns:58px 1fr 15px}
+  .course-week{height:70px;background:#222825;border:1px solid var(--line)}
+  .course-copy>small,.mobile-event-card>span:nth-child(2)>small{color:var(--lime)}
+  .course-copy>strong,.mobile-event-card>span:nth-child(2)>strong{font-size:.82rem}
+  .course-progress{background:#2a302d}
+  .mobile-event-card{grid-template-columns:54px 1fr 18px;background:var(--panel)}
+  .mobile-event-card:after{content:'';position:absolute;width:110px;height:110px;border-radius:50%;right:-55px;top:-65px;background:rgba(200,255,54,.055);pointer-events:none}
+  .event-date{height:66px;background:#222825;border:1px solid var(--line);color:var(--lime)}
+  .light-theme .mobile-book-now{background:linear-gradient(135deg,rgba(167,224,45,.16),#fff)}
+  .light-theme .mobile-course-card,.light-theme .mobile-event-card{background:#fff}
+  .light-theme .course-week,.light-theme .event-date{background:#edf2e9}
+}
